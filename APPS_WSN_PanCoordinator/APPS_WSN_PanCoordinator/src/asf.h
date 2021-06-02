@@ -56,6 +56,9 @@
 #include <compiler.h>
 #include <status_codes.h>
 
+// From module: Common files for AT25DFx SerialFlash drivers
+#include <at25dfx.h>
+
 // From module: Delay routines
 #include <delay.h>
 
@@ -84,10 +87,6 @@
 // From module: SERCOM Callback API
 #include <sercom.h>
 #include <sercom_interrupt.h>
-
-// From module: SERCOM I2C - Master Mode I2C (Polled APIs)
-#include <i2c_common.h>
-#include <i2c_master.h>
 
 // From module: SERCOM Polled API
 #include <sercom.h>

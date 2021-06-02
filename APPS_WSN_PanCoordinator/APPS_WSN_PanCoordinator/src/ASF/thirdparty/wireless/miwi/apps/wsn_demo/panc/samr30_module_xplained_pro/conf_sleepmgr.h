@@ -1,7 +1,7 @@
 /**
-* \file  conf_extint.h
+* \file
 *
-* \brief External Interrupt Driver Configuration Header
+* \brief Sleep manager configuration
 *
 * Copyright (c) 2018 Microchip Technology Inc. and its subsidiaries. 
 *
@@ -34,17 +34,9 @@
 * Support and FAQ: visit <a href="https://www.microchip.com/support/">Microchip Support</a>
 */
 
-#ifndef CONF_EXTINT_H_INCLUDED
-#define CONF_EXTINT_H_INCLUDED
+#ifndef CONF_SLEEPMGR_H
+#define CONF_SLEEPMGR_H
 
-#define EXTINT_CLOCK_SELECTION   EXTINT_CLK_ULP32K
- 
-/**
- * Define which GCLK source is used when selecting EXTINT_CLK_GCLK type.
- */
-#if (EXTINT_CLOCK_SELECTION == EXTINT_CLK_GCLK)
-#  define EXTINT_CLOCK_SOURCE      GCLK_GENERATOR_0
-#endif
+#define CONFIG_SLEEPMGR_ENABLE
 
-
-#endif
+#endif /* CONF_SLEEPMGR_H */

@@ -1,7 +1,7 @@
 /**
-* \file  conf_extint.h
+* \file
 *
-* \brief External Interrupt Driver Configuration Header
+* \brief SAM RTC Driver Configuration Header
 *
 * Copyright (c) 2018 Microchip Technology Inc. and its subsidiaries. 
 *
@@ -34,17 +34,12 @@
 * Support and FAQ: visit <a href="https://www.microchip.com/support/">Microchip Support</a>
 */
 
-#ifndef CONF_EXTINT_H_INCLUDED
-#define CONF_EXTINT_H_INCLUDED
+#ifndef CONF_RTC_H_INCLUDED
+#define CONF_RTC_H_INCLUDED
 
-#define EXTINT_CLOCK_SELECTION   EXTINT_CLK_ULP32K
- 
-/**
- * Define which GCLK source is used when selecting EXTINT_CLK_GCLK type.
+/** Select RTC clock. Use 1.024kHz from 32kHz internal ULP oscillator(OSCULP32K)
+ *  for RTC clock.
  */
-#if (EXTINT_CLOCK_SELECTION == EXTINT_CLK_GCLK)
-#  define EXTINT_CLOCK_SOURCE      GCLK_GENERATOR_0
-#endif
-
+#  define RTC_CLOCK_SOURCE    RTC_CLOCK_SELECTION_ULP1K
 
 #endif

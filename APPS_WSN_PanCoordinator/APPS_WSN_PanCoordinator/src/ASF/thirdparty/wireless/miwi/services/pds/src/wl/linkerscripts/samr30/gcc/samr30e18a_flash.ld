@@ -1,7 +1,7 @@
 /**
  * \file
  *
- * \brief Linker script for running in internal FLASH on the SAMR30G18A
+ * \brief Linker script for running in internal FLASH on the SAML21E18A
  *
  * Copyright (c) 2018 Microchip Technology Inc. and its subsidiaries. 
  *

@@ -1,7 +1,7 @@
 /**
-* \file  conf_extint.h
+* \file  conf_at25dfx.h
 *
-* \brief External Interrupt Driver Configuration Header
+* \brief AT25DFx configuration.
 *
 * Copyright (c) 2018 Microchip Technology Inc. and its subsidiaries. 
 *
@@ -34,17 +34,27 @@
 * Support and FAQ: visit <a href="https://www.microchip.com/support/">Microchip Support</a>
 */
 
-#ifndef CONF_EXTINT_H_INCLUDED
-#define CONF_EXTINT_H_INCLUDED
+#ifndef CONF_AT25DFX_H_INCLUDED
+#define CONF_AT25DFX_H_INCLUDED
 
-#define EXTINT_CLOCK_SELECTION   EXTINT_CLK_ULP32K
- 
-/**
- * Define which GCLK source is used when selecting EXTINT_CLK_GCLK type.
- */
-#if (EXTINT_CLOCK_SELECTION == EXTINT_CLK_GCLK)
-#  define EXTINT_CLOCK_SOURCE      GCLK_GENERATOR_0
-#endif
+#include <board.h>
+#include "at25dfx.h"
 
+//! Select the SPI module AT25DFx is connected to
+#define AT25DFX_SPI                 SERIALFLASH_SPI_MODULE
 
-#endif
+/** AT25DFx device type */
+#define AT25DFX_MEM_TYPE            AT25DFX_041B
+
+#define AT25DFX_SPI_PINMUX_SETTING  SERIALFLASH_SPI_MUX_SETTING
+#define AT25DFX_SPI_PINMUX_PAD0     SERIALFLASH_SPI_PINMUX_PAD0
+#define AT25DFX_SPI_PINMUX_PAD1     SERIALFLASH_SPI_PINMUX_PAD1
+#define AT25DFX_SPI_PINMUX_PAD2     SERIALFLASH_SPI_PINMUX_PAD2
+#define AT25DFX_SPI_PINMUX_PAD3     SERIALFLASH_SPI_PINMUX_PAD3
+
+#define AT25DFX_CS                  SERIALFLASH_SPI_CS 
+
+//! SPI master speed in Hz.
+#define AT25DFX_CLOCK_SPEED         4000000
+
+#endif  /* CONF_AT25DFX_H_INCLUDED */

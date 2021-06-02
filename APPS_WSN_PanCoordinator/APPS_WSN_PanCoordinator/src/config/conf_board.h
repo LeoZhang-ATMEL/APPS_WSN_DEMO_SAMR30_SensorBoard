@@ -37,27 +37,10 @@
 #ifndef CONF_BOARD_H_INCLUDED
 #define CONF_BOARD_H_INCLUDED
 
-/* Enable if OLED1 Xplained Pro is connected */
-//#define EXT_BOARD_OLED1_XPLAINED_PRO
-
 #define CONF_BOARD_AT86RFX
 
-#define MCU_SOC_NAME        "ATSAMR30G18A"
+#define MCU_SOC_NAME        "ATSAMR30E18A"
 
 #define AT86RFX_SPI_BAUDRATE             4000000UL
-
-#if (defined EXT_BOARD_OLED1_XPLAINED_PRO)
-
-#define ENABLE_LCD
-
-#define WING_BUTTON_1 EXT1_PIN_9
-#define WING_BUTTON_2 EXT1_PIN_3
-#define WING_BUTTON_3 EXT1_PIN_4
-
-#endif
-
-#if defined (ENABLE_LCD)
-#include "lcd.h"
-#endif
 
 #endif /* CONF_BOARD_H_INCLUDED */

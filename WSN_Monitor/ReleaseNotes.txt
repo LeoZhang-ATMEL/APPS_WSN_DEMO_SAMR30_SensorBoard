@@ -1,0 +1,46 @@
+WSN Monitor 2.2.0
+=================
+
+Requre jre 1.5 or 1.6
+---------------------
+
+Features added
+--------------
+- Using plugins system
+- Customizable protocol
+- Nodes list with filters
+
+Features removed
+----------------
+- Send command interface
+
+Bugs fixed
+----------------
+- Some minor bugs
+
+
+WSN Monitor 2.1.0
+=================
+
+Features added
+--------------
+- Send command interface
+
+Bugs fixed
+----------------
+- Serial port work
+
+WSN Monitor 2.0.0
+=================
+
+New release of WSNMonitor. All code was refactored and reviewed. 
+
+Features added
+--------------
+- Add distribution algorithms, changable from menu
+
+Features changed
+----------------
+- Network visualization component was changed. No JGraph now!
+- Unused commands was removed
+- New implementation of sidebar with collapse panel buttons

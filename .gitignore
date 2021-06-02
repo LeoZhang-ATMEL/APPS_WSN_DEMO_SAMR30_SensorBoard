@@ -22,3 +22,5 @@
 *.atsuo
 
 packets.log
+tools/jre-6u6-p-windows-i586/
+tools/jre1.6.0_06-p/

@@ -77,7 +77,7 @@
 /* PHY_TX_PWR */
 #define PA_BOOST          7
 #define GC_PA             5
-#define TX_PWR            0
+#define TX_PWR            0xC0
 
 /* PHY_RSSI */
 #define RX_CRC_VALID      7

@@ -16,12 +16,15 @@ and several [SAMR30M Sensor Board](https://www.microchip.com/DevelopmentTools/Pr
 was connect to the PC, and the USB CDC port(UART) was success enumerated.
 
 ### Running the Demo
-1. Set the Tools\jre-6u6-p-windows-i586\jre1.6.0_06-p\bin\java.exe Compatibility properties for Windows 7
-2. Click the wsn_lanucher.bat to open the WSN-Monitor as run as administrator
-3. Click File->Connect
-4. Select WSN_Monitor\protocol\ folder as "Protocol Configuration folder" parameters, Ensure you do not have the protocol field as protocol.null
-5. Select Serial as communication interface
-6. Select COM port which the PanCoordinator [SAM R30M Xplained Pro Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/AC164159) enumerated.
+1. Unzip *Tools/jre-6u6-p-windows-i586.zip*, ensure the java.exe can be find at **Tools/jre-6u6-p-windows-i586/jre1.6.0_06-p/bin/java.exe**
+1. Set the **Tools\jre-6u6-p-windows-i586\jre1.6.0_06-p\bin\java.exe** Compatibility properties for **Windows 7**
+2. Run the **wsn_lanucher.bat** as administrator to open the WSN-Monitor.
+3. Click **File->Connect**
+4. Select *WSN_Monitor\protocol\* folder as **Protocol Configuration folder** parameters, Ensure you do not have the protocol field as **protocol.null**
+5. Select **Serial** as communication interface
+6. Select **COM port** which the PanCoordinator [SAM R30M Xplained Pro Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/AC164159) enumerated.
+
+The WSN-Monitor Will display all the MiWi node in the central Panel.
 
 
 
